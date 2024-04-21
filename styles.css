@@ -1,0 +1,224 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    padding: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.toggle {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        padding: 10px 0;
+    }
+}
+
+
+/* Ocultar todas las secciones excepto la sección de "Inicio" */
+
+section {
+    display: none;
+}
+
+#bienvenida {
+    display: block;
+    /* Mostrar la sección de "Inicio" al cargar la página */
+}
+
+
+/* Estilos adicionales para otros elementos en la página */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* Estilos para el Hero Section */
+
+#hero {
+    background-image: url("hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+
+/* Estilos para el Hero Image */
+
+#hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Estilos para la sección de "Integrantes" */
+
+#integrantes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.integrante {
+    margin-bottom: 30px;
+}
+
+.integrante img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.integrante h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.integrante p {
+    font-size: 1.2rem;
+}
+
+
+/* Estilos para la sección de "Ejercicios" */
+
+#ejercicios-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ejercicios-content input {
+    width: 30%;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+
+/* Estilos para el footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+#map {
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
